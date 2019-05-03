@@ -1,5 +1,5 @@
 # golang-docker-pipe-issues
-Demonstrate an issue with the current version of golang docker containers.
+The purpose of this repository is to demonstrate an issue with the current version(1.12.4) of golang docker containers.
 
 It appears as if a compiled go app in the docker container does not have access to the stdin pipe.
 
