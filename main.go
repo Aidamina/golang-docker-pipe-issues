@@ -13,7 +13,7 @@ func main() {
 		panic(err)
 	}
 
-	if info.Mode()&os.ModeCharDevice != 0 || info.Size() <= 0 {
+	if info.Mode()&os.ModeNamedPipe == 0 {
 		fmt.Println("No pipe found.")
 		os.Exit(1)
 	}
